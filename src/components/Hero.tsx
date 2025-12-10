@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="w-full relative">
       {/* Hero Image with Overlaid Text */}
-      <div className="w-full relative h-[400px] sm:h-[550px] md:h-[700px] lg:h-[800px]">
+      <div className="w-full relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px]">
         <Image
           src="/hero.jpg"
           alt="Business School of Accountancy background"

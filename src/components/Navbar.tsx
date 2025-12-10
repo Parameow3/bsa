@@ -25,15 +25,15 @@ export default function Navbar() {
         <div className="w-full flex justify-end items-center px-4 sm:px-6" style={{ gap: '1.5rem' }}>
           <a
             href="#"
-            className="text-[11px] sm:text-sm text-white no-underline hover:underline whitespace-nowrap"
+            className="text-sm sm:text-sm text-white no-underline hover:underline whitespace-nowrap"
             style={{ color: '#FFFFFF', display: 'inline-block' }}
           >
             On Demand Exam Booking
           </a>
           <a
             href="#"
-            className="bg-[#FF0000] text-white rounded-none font-semibold hover:bg-[#CC0000] transition-colors whitespace-nowrap no-underline text-[11px] sm:text-sm"
-            style={{ color: '#FFFFFF', padding: '0.45rem 0.9rem', display: 'inline-block' }}
+            className="bg-[#FF0000] text-white rounded-none font-semibold hover:bg-[#CC0000] transition-colors whitespace-nowrap no-underline text-sm sm:text-sm"
+            style={{ color: '#FFFFFF', padding: '0.5rem 1rem', display: 'inline-block' }}
           >
             MyACCA
           </a>
@@ -51,12 +51,12 @@ export default function Navbar() {
             <Image
               src="/bsa_logo.png"
               alt="BSA Logo"
-              width={220}
-              height={110}
+              width={240}
+              height={120}
               className="w-auto object-contain"
               style={{
-                height: 'clamp(2.5rem, 9vw, 4rem)', // slightly larger across breakpoints
-                maxHeight: '6.5rem'
+                height: 'clamp(3rem, 11vw, 4.75rem)', // larger overall, especially on phones
+                maxHeight: '7rem'
               }}
               priority
             />
