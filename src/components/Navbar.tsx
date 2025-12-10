@@ -36,13 +36,16 @@ export default function Navbar() {
       <div className="bg-[#1C68B4] text-white py-3 sm:py-5 w-full">
         <div className="w-full flex items-center px-4 sm:px-6" style={{ justifyContent: 'space-between' }}>
           {/* Left: Logos */}
-          <div className="flex items-center gap-3 sm:gap-6" style={{ flexShrink: 0 }}>
+          <div
+            className="flex items-center gap-3 sm:gap-6 pl-2 sm:pl-4 ml-2 sm:ml-4"
+            style={{ flexShrink: 0, marginLeft: '0.75rem' }}
+          >
             <Image
               src="/bsa_logo.png"
               alt="BSA Logo"
-              width={220}
-              height={110}
-              className="h-12 sm:h-20 md:h-24 w-auto object-contain"
+              width={180}
+              height={90}
+              className="h-10 sm:h-16 md:h-20 w-auto object-contain"
               priority
             />
           </div>
@@ -142,14 +145,19 @@ export default function Navbar() {
                 className="h-10 lg:h-14 w-auto object-contain"
                 priority
               />
-              <Image
-                src="/acca_licensed.png"
-                alt="ACCA Licensed CBE Centre"
-                width={120}
-                height={120}
-                className="h-16 lg:h-24 w-auto object-contain"
-                priority
-              />
+              <div
+                className="p-2 lg:p-3"
+                style={{ padding: '12px 10px' }}
+              >
+                <Image
+                  src="/acca_licensed.png"
+                  alt="ACCA Licensed CBE Centre"
+                  width={100}
+                  height={100}
+                  className="h-14 lg:h-20 w-auto object-contain"
+                  priority
+                />
+              </div>
             </div>
           )}
 
@@ -282,7 +290,10 @@ export default function Navbar() {
               </div>
 
               {/* Mobile Partner Badges */}
-              <div className="flex items-center justify-center gap-4 pt-4 mt-4" style={{ borderTop: '1px solid white' }}>
+              <div
+                className="flex items-center justify-center gap-4 pt-4 pb-4 mt-4"
+                style={{ borderTop: '1px solid white', paddingTop: '1rem', paddingBottom: '1rem' }}
+              >
                 <Image
                   src="/Silver_partner.png"
                   alt="Silver Learning Partner"
@@ -294,9 +305,9 @@ export default function Navbar() {
                 <Image
                   src="/acca_licensed.png"
                   alt="ACCA Licensed CBE Centre"
-                  width={120}
-                  height={120}
-                  className="h-20 w-auto object-contain"
+                width={100}
+                height={100}
+                className="h-16 w-auto object-contain"
                   priority
                 />
               </div>

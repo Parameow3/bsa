@@ -47,8 +47,8 @@ export default function Partners({
           <Image
             src={partner.logo}
             alt={partner.name}
-            width={200}
-            height={100}
+            width={160}
+            height={80}
             style={{
               maxWidth: '100%',
               height: 'auto',
