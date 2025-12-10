@@ -23,10 +23,18 @@ export default function Navbar() {
       {/* Top Bar */}
       <div className="bg-[#1C3A62] text-white py-2 w-full">
         <div className="w-full flex justify-end items-center px-4 sm:px-6" style={{ gap: '1.5rem' }}>
-          <a href="#" className="text-xs sm:text-sm text-white no-underline hover:underline whitespace-nowrap" style={{ color: '#FFFFFF', display: 'inline-block' }}>
+          <a
+            href="#"
+            className="text-[11px] sm:text-sm text-white no-underline hover:underline whitespace-nowrap"
+            style={{ color: '#FFFFFF', display: 'inline-block' }}
+          >
             On Demand Exam Booking
           </a>
-          <a href="#" className="bg-[#FF0000] text-white rounded-none font-semibold hover:bg-[#CC0000] transition-colors whitespace-nowrap no-underline text-xs sm:text-sm" style={{ color: '#FFFFFF', padding: '0.5rem 1rem', display: 'inline-block' }}>
+          <a
+            href="#"
+            className="bg-[#FF0000] text-white rounded-none font-semibold hover:bg-[#CC0000] transition-colors whitespace-nowrap no-underline text-[11px] sm:text-sm"
+            style={{ color: '#FFFFFF', padding: '0.45rem 0.9rem', display: 'inline-block' }}
+          >
             MyACCA
           </a>
         </div>
@@ -43,9 +51,13 @@ export default function Navbar() {
             <Image
               src="/bsa_logo.png"
               alt="BSA Logo"
-              width={180}
-              height={90}
-              className="h-10 sm:h-16 md:h-20 w-auto object-contain"
+              width={220}
+              height={110}
+              className="w-auto object-contain"
+              style={{
+                height: 'clamp(2.5rem, 9vw, 4rem)', // slightly larger across breakpoints
+                maxHeight: '6.5rem'
+              }}
               priority
             />
           </div>
