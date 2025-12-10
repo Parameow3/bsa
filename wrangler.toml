@@ -1,0 +1,6 @@
+name = "bsa"
+compatibility_date = "2025-12-10"
+
+# Serve the static export produced by `next build`.
+[assets]
+directory = "./out"
