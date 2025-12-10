@@ -9,6 +9,10 @@ html, body {
   overflow-x: hidden;
 }
 
+.font-ibm-plex {
+  font-family: var(--font-ibm-plex-sans), sans-serif;
+}
+
 footer {
   margin-bottom: 0;
   padding-bottom: 0;

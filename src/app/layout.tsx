@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Playfair_Display, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,6 +13,18 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const playfairDisplay = Playfair_Display({
+  variable: "--font-playfair-display",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const ibmPlexSans = IBM_Plex_Sans({
+  variable: "--font-ibm-plex-sans",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -27,11 +40,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="w-full">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased w-full m-0 p-0`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} ${ibmPlexSans.variable} antialiased w-full m-0 p-0`}
       >
         <Navbar />
         {children}
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );
