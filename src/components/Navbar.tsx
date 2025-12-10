@@ -51,12 +51,12 @@ export default function Navbar() {
             <Image
               src="/bsa_logo.png"
               alt="BSA Logo"
-              width={240}
-              height={120}
+              width={220}
+              height={110}
               className="w-auto object-contain"
               style={{
-                height: 'clamp(3rem, 11vw, 4.75rem)', // larger overall, especially on phones
-                maxHeight: '7rem'
+                height: 'clamp(3.75rem, 14vw, 5rem)', // even larger on phones
+                maxHeight: '7.25rem'
               }}
               priority
             />
@@ -152,9 +152,9 @@ export default function Navbar() {
               <Image
                 src="/Silver_partner.png"
                 alt="Silver Learning Partner"
-                width={200}
-                height={60}
-                className="h-10 lg:h-14 w-auto object-contain"
+                width={180}
+                height={54}
+                className="h-9 lg:h-12 w-auto object-contain"
                 priority
               />
               <div
@@ -164,9 +164,9 @@ export default function Navbar() {
                 <Image
                   src="/acca_licensed.png"
                   alt="ACCA Licensed CBE Centre"
-                  width={100}
-                  height={100}
-                  className="h-14 lg:h-20 w-auto object-contain"
+                  width={90}
+                  height={90}
+                  className="h-12 lg:h-16 w-auto object-contain"
                   priority
                 />
               </div>
@@ -306,22 +306,22 @@ export default function Navbar() {
                 className="flex items-center justify-center gap-4 pt-4 pb-4 mt-4"
                 style={{ borderTop: '1px solid white', paddingTop: '1rem', paddingBottom: '1rem' }}
               >
-                <Image
-                  src="/Silver_partner.png"
-                  alt="Silver Learning Partner"
-                  width={200}
-                  height={60}
-                  className="h-16 w-auto object-contain"
-                  priority
-                />
-                <Image
-                  src="/acca_licensed.png"
-                  alt="ACCA Licensed CBE Centre"
-                width={100}
-                height={100}
-                className="h-16 w-auto object-contain"
-                  priority
-                />
+              <Image
+                src="/Silver_partner.png"
+                alt="Silver Learning Partner"
+                width={170}
+                height={55}
+                className="h-14 w-auto object-contain"
+                priority
+              />
+              <Image
+                src="/acca_licensed.png"
+                alt="ACCA Licensed CBE Centre"
+                width={90}
+                height={90}
+                className="h-14 w-auto object-contain"
+                priority
+              />
               </div>
             </div>
           </div>
