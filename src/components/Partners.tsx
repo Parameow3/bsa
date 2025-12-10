@@ -82,13 +82,13 @@ export default function Partners({
     partners: Partner[]; 
     icon: React.ReactNode;
   }) => (
-    <div style={{ marginBottom: 'clamp(3rem, 5vw, 4rem)' }}>
+    <div style={{ marginBottom: 'clamp(2rem, 4vw, 3.25rem)' }}>
       {/* Section Header */}
       <div 
         className="flex items-center justify-center"
         style={{ 
-          marginBottom: 'clamp(1.5rem, 3vw, 2.5rem)',
-          gap: '1rem'
+          marginBottom: 'clamp(1rem, 2.5vw, 2rem)',
+          gap: '0.75rem'
         }}
       >
         <div 
@@ -160,7 +160,7 @@ export default function Partners({
       className="w-full relative overflow-hidden"
       style={{
         backgroundColor: '#F9FAFB',
-        padding: 'clamp(2rem, 5vw, 3rem) 0'
+        padding: 'clamp(1.5rem, 4vw, 2.75rem) 0'
       }}
     >
       {/* Decorative Background Elements */}
@@ -194,14 +194,14 @@ export default function Partners({
         }}
       >
         {/* Main Header */}
-        <div className="text-center" style={{ marginBottom: 'clamp(2.5rem, 5vw, 4rem)' }}>
+        <div className="text-center" style={{ marginBottom: 'clamp(1.75rem, 4vw, 3.25rem)' }}>
           <h2 
             className="font-bold"
             style={{
               fontFamily: 'var(--font-ibm-plex-sans)',
               fontSize: 'clamp(2rem, 5vw, 3.5rem)',
               color: '#1C68B4',
-              marginBottom: '1rem',
+              marginBottom: '0.75rem',
               lineHeight: '1.2'
             }}
           >
@@ -217,7 +217,7 @@ export default function Partners({
               maxWidth: '800px',
               marginLeft: 'auto',
               marginRight: 'auto',
-              lineHeight: '1.7'
+              lineHeight: '1.6'
             }}
           >
             We collaborate with leading educational institutions and professional firms to provide our students with the best opportunities and resources.
@@ -228,8 +228,8 @@ export default function Partners({
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-            gap: 'clamp(2rem, 4vw, 3rem)'
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+            gap: 'clamp(1.5rem, 3.5vw, 2.5rem)'
           }}
         >
           <PartnerSection 
